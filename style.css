@@ -23,7 +23,7 @@ p {
    }
    .nav-list {
      margin-right: 10px;
-     font-size: 30px;
+     font-size: 25px;
    }
    
    .table {
@@ -40,7 +40,7 @@ p {
        }
        ul#horizontal-list li {
        display: inline;
-       font-size: 20px;
+
        }
 /* Main Section */
 /* The div around "Services" */
