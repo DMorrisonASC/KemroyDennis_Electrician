@@ -1,0 +1,116 @@
+/* Navigation is in the header */
+html {
+    font-family: Tahoma, Verdana, sans-serif;
+}
+
+header {
+    background-color: orange;
+    position: fixed;
+    top: 0px;
+    z-index: 6;
+    width: 100%;
+}
+main {
+  position: relative;
+  top: 50px;
+}
+p {
+  font-size: 23px;
+}
+#menu-outer {
+    margin: 0px;
+
+   }
+   .nav-list {
+     margin-right: 10px;
+     font-size: 30px;
+   }
+   
+   .table {
+       display: table;   /* Allow the centering to work */
+       margin: 0 auto;
+   }
+   
+   ul#horizontal-list {
+     list-style: none;
+     text-align: center;
+     margin-top: 10px;
+     padding-left: 5px;
+     padding-right: 5px; 
+       }
+       ul#horizontal-list li {
+       display: inline;
+       font-size: 20px;
+       }
+/* Main Section */
+/* The div around "Services" */
+#about-self-block {
+    background-color:  #CBE86B;
+    width: 100%;
+  
+  
+  }
+  /* This div appears when screen width is greater then 600px */
+  #dispear-section {
+    width: 100%;
+    display: flex;
+    box-shadow: 0 8px 6px -6px black;
+    position: relative;
+    z-index: 5;
+    font-size: 21px;
+  }
+    #dispear-section ul {
+        width: 40%;
+    }
+
+  /* This div appears when screen width is less then 600px */
+  #dispear-section-mobile {
+    display:none;
+  }
+  
+  .about-self-info {
+    text-align: left;
+    padding: 10px;
+    word-wrap: break-word;
+    font-size: 20px;
+  }
+  .self-photo {
+    width: 60%;
+    margin-left: 10px;
+  }
+  /* Media Queries */
+
+@media only screen and (max-width: 769px) {
+
+    ul#horizontal-list li {
+      display: inline;
+      font-size: 17px;
+      }
+    .self-photo {
+        width: 100%;
+      }
+      #dispear-section {
+        display: none;
+    
+      }
+      #dispear-section-mobile{
+        display:block;
+        box-shadow: 0 8px 6px -6px black;
+        position: relative;
+        z-index: 5;
+      }
+      #dispear-section-mobile ul {
+      font-size: 23px;
+      }
+    .about-self-info {
+      padding-left: 10px;
+      word-wrap: break-word;
+      font-size: 17px;
+    }
+    .self-photo {
+        width: 100%;
+        margin-left: 0px;
+      }
+  }
+  
+  
